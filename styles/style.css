@@ -1,0 +1,26 @@
+/* shared styles */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* heading styles */
+
+/* nav section styles */
+nav{
+    display: flex;
+}
+.nav-img{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+
+.nav-content{
+    width: 50%;
+}
+.nav-content ul{
+    display: flex;
+}
