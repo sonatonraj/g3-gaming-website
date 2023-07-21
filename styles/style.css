@@ -165,6 +165,7 @@ nav{
     justify-content: center;
     margin-top: 48px;
     width: 100%;
+    gap: 15px;
 }
 .online-card img{
     width: 100%;
