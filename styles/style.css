@@ -17,6 +17,12 @@ body{
     font-weight: 600;
     text-transform: uppercase;
 }
+.nav-btn .fa-youtube{
+    color: red;
+    margin-left: 24px;
+    margin-right: 20px;
+    font-size: 20px;
+}
 
 /* heading styles */
 
@@ -99,13 +105,16 @@ nav{
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 24px;
+    background-image: linear-gradient(to bottom,#F948B2,#8758F1);
+    color: transparent;
+    -webkit-background-clip: text;
 }
+
 .banner-text{
     color: #534C64;
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 17px;
-
 }
 .banner-btn{
     margin-top: 41px;
@@ -124,4 +133,295 @@ nav{
 
 .banner-img img{
     margin: 20px 240px 0 60px;
+}
+
+/* main section styles */
+
+/* section online */
+.online-section{
+    margin: 120px 240px;
+}
+.section-heading{
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.styles-funny{
+    background-image: linear-gradient(to bottom,#F948B2,#8758F1);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.section-description{
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+.online-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    margin-top: 48px;
+    width: 100%;
+}
+.online-card img{
+    width: 100%;
+}
+.card-description{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 24px;
+}
+/* play section styles */
+.play-section{
+    display: flex;
+    margin: 120px 240px 0 400px;
+}
+#text{
+    text-align: right;
+}
+.play-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 265px;
+}
+
+
+.big-pic{
+    position: relative;
+    height: 650px;
+    width: 630px;
+}
+.small-pic{
+    height: 360px;
+    width: 316px;
+    position: absolute;
+    bottom: -180px;
+    left: -180px;
+}
+
+/* Game btn section styles */
+.btn-picture{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 300px 240px 0;
+    justify-content: center;
+}
+.game-btn{
+    display: flex;
+    align-items: center;
+    border: 0;
+    background-color: #fff;
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 5px;
+
+}
+.game-btn img{
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+}
+.game-btn:hover{
+    background-color: #fff;
+    border: 1px solid #F948B2;
+    border-radius: 48px;
+    color: #F948B2;
+}
+.game-btn:focus{
+    outline: #F948B2;
+}
+
+/* footer styles */
+footer{
+    background-color: #0B0223;
+    height: 640px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 56px;
+}
+.footer-logo{
+    height: 2.5rem;
+    width: 5.3rem;
+    margin-right: 1.25rem;
+}
+.footer-title{
+    color: #FFF;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+.footer-list1{
+    width: 800px;
+    margin: 0 auto;
+
+}
+.footer-list1 ul{
+    display: flex;
+    justify-content: space-between;
+    list-style:none ;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 66px;
+}
+.footer-list1 ul li{
+    cursor: pointer;
+}
+.footer-list2 ul li{
+    cursor: pointer;
+}
+.icon-div{
+   width: 495px;
+   margin: 0 auto;
+}
+.footer-icon{
+    background-color: #0B0223;
+    border: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    margin-right: 40px;
+    margin-bottom: 56px;
+    cursor: pointer;
+}
+.footer-list2{
+    width: 710px;
+    margin: 0 auto;
+}
+.footer-list2 ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    
+}
+.footer-description{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    .nav-btn .fa-youtube{
+        margin-left: 15px;
+        margin-right: 12px;
+        font-size: 16px;
+    }
+    .nav-btn{
+        font-size: 1rem;
+    }
+    .online-card{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        width: 100%;
+    }
+    .online-section{
+        margin: 120px 20px;
+}
+    nav{
+        flex-direction: column;
+        padding: 10px 50px;
+    }
+    .nav-content ul{
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 3rem;
+}
+    .banner-section{
+        flex-direction: column;
+        margin: 100px 30px;
+}
+.nav-img  .nav-content{
+    width: 100%;
+}
+.banner-img img{
+    width: 90%;
+    margin: 0px 20px;
+}
+.banner-content{
+    width: 100vw;
+}
+.play-section{
+    flex-direction: column;
+    margin: 100px 30px 400px;
+}
+.play-content{
+    margin: 60px 30px;
+    
+    
+}
+#text{
+    text-align: center;
+}
+.big-pic img{
+    
+    width: 330px;
+    height: 360px;
+}
+.big-pic{
+    position: relative;
+}
+.small-pic img{
+    height: 150px;
+    width: 120px;
+}
+.small-pic{
+    position: absolute;
+    bottom: 10px;
+    left: -60px;
+}
+.btn-picture{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 100px 40px;
+    width: 90%;
+
+}
+main , footer{
+    margin: 100px 30px;
+}
+.footer-list1 ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-around;
+    
+}
+.footer-container{
+   width: 500px;
+}
+.icon-div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.footer-list2 ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
 }
